@@ -119,3 +119,17 @@ dp[i-1][j]
 dp[i][j] =
 dp[i-1][j-arr[i-1]] || dp[i-1][j]
 ```
+##Equal Sum Partition
+```
+if(arr[i-1] <= j)
+    dp[i][j] = dp[i-1][j-arr[i-1]] || dp[i-1][j];
+else
+    dp[i][j] = dp[i-1][j];
+Only Extra Step (Equal Partition)
+int sum = total array sum;
+
+if(sum % 2 != 0)
+    return false;
+
+target = sum / 2;
+```
