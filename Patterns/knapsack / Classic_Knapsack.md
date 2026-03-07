@@ -105,7 +105,17 @@ Space Complexity : O(N × W)
 
 ---
 
-## Topics
-- Dynamic Programming
-- Knapsack Pattern
-- Optimization Problem
+Recurrence (Knapsack → Subset Sum)
+
+##Knapsack
+```
+dp[i][j] = max(
+value[i-1] + dp[i-1][j-weight[i-1]],
+dp[i-1][j]
+)
+```
+##Subset Sum
+```
+dp[i][j] =
+dp[i-1][j-arr[i-1]] || dp[i-1][j]
+```
